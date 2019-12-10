@@ -21,3 +21,43 @@
     opacity: 1;
     visibility: visible; 
 }
+
+.ml1 {
+    margin-left: 1em !important;
+}
+
+.ml2 {
+    margin-left: 2em !important;
+}
+
+.ml3 {
+    margin-left: 3em !important;
+}
+
+.ml4 {
+    margin-left: 4em !important;
+}
+
+.ml5 {
+    margin-left: 5em !important;
+}
+
+.mr1 {
+    margin-right: 1em !important;
+}
+
+.mr2 {
+    margin-right: 2em !important;
+}
+
+.mr3 {
+    margin-right: 3em !important;
+}
+
+.mr4 {
+    margin-right: 4em !important;
+}
+
+.mr5 {
+    margin-right: 5em !important;
+}

@@ -7,10 +7,7 @@ import ValueBox from '../common/widget/valueBox'
 import Row from '../common/layout/row'
 import Grid from '../common/layout/grid'
 import { connect } from 'react-redux'
-import axios from 'axios'
-
-const BASE_URL = 'http://localhost:3003/api'
-
+import getData from '../main/connect'
 
 class Dashboard extends React.Component {
     constructor(props) {
@@ -29,7 +26,7 @@ class Dashboard extends React.Component {
     }
 
     getSummary() {
-        axios.get(`${BASE_URL}/BillingCycles/summary`).then(response => {
+        getData('BillingCycles/summary').then(response => {
             this.setState({ ...this.state, summary: response.data, isLoading: false})
         }).catch (err => {
             this.setState({
